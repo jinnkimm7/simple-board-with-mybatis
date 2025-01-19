@@ -21,6 +21,8 @@ public class BoardController {
     public String save(BoardDto boardDto) {
         System.out.println("BoardController.save");
         System.out.println("boardDto = " + boardDto);
+
+        boardService.save(boardDto);
         return "index";
     }
 }
